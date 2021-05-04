@@ -1,0 +1,10 @@
+include(":model")
+include(":model-android")
+include(":domain")
+include(":data")
+include(":shared")
+include(":app")
+include(":ui:task")
+include(":common:ui")
+include(":common:android")
+rootProject.name = "ToDo"

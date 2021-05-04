@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Not particular to day or night -->
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="lotion">#FAFAFA</color>
+    <color name="charcoal">#364554</color>
+    <color name="ocean_green">#40C785</color>
+    <color name="tea_green">#C8E6C9</color>
+    <color name="dark_electric_blue">#60627b</color>
+    <color name="marigold">#e4a11f</color>
+    <color name="mantis">#76db57</color>
+    <color name="darker_gray">#aaa</color>
+    <color name="brick_red">#D2324E</color>
+    <color name="cultured">#F3F4F8</color>
+    <color name="american_blue">#424361</color>
+    <color name="independence">#494A68</color>
+    <color name="keppel">#36AAAAAA</color>
+    <color name="dark_keppel">#3caea3</color>
+    <color name="ruby">#D81B60</color>
+    <color name="jazzberry_jam">#ad1457</color>
+    <color name="matisse">#20639b</color>
+    <color name="pastel_blue">#a5c0d6</color>
+    <color name="dim_gray">#707070</color>
+    <color name="gray">#bebebe</color>
+    <color name="pink_swan">#b8b8b8</color>
+    <color name="toolbar_title">#0f2a41</color>
+    <color name="status_completed">#b33caea3</color>
+    <color name="status_delayed">#b3f6d55c</color>
+    <color name="status_cancelled">#ff8874</color>
+    <color name="white_smoke">#f5f5f5</color>
+    <color name="common_button_bg">#5f8eb5</color>
+    <color name="common_button_text">#8F8F8F</color>
+    <color name="gs_blue">#5f8eb5</color>
+    <color name="chambray">#4c5d6e</color>
+
+    <color name="gs_secondary">@color/gs_blue</color>
+    <color name="gs_on_secondary">@color/white</color>
+    <color name="gs_text_color_primary_inverse">@color/white</color>
+    <color name="gs_status_bar">@color/gs_primary</color>
+    <color name="gs_primary">@color/cultured</color>
+    <color name="gs_on_primary">@color/ocean_green</color>
+    <color name="gs_date_picker_header_background">@color/ocean_green</color>
+    <color name="gs_color_control_active">@color/matisse</color>
+    <color name="gs_color_control_deactive">@color/pastel_blue</color>
+    <color name="gs_alert">@color/brick_red</color>
+    <color name="global_text_color">@color/charcoal</color>
+    <color name="gs_color_surface">@color/lotion</color>
+    <color name="gs_color_on_surface">@color/ocean_green</color>
+    <color name="title_create_task">@color/charcoal</color>
+    <color name="common_inverse">@color/charcoal</color>
+    <color name="text_button">@color/lotion</color>
+    <color name="gs_date_picker_ripple_color">@color/tea_green</color>
+    <color name="vertical_line_gradient">@color/white</color>
+</resources>

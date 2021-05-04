@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="title"
+            type="String" />
+
+        <variable
+            name="description"
+            type="String" />
+
+        <variable
+            name="dueDate"
+            type="com.support.multicalendar.DandelionDate" />
+
+        <variable
+            name="isDone"
+            type="Boolean" />
+
+        <variable
+            name="priority"
+            type="Integer" />
+
+        <variable
+            name="clickListener"
+            type="com.carpet.goharshad.ui.utils.EpoxyActionListener" />
+
+        <variable
+            name="longClickListener"
+            type="com.carpet.goharshad.ui.utils.EpoxyActionListener" />
+
+        <variable
+            name="checkedChangeListener"
+            type="com.carpet.goharshad.ui.utils.EpoxyEventListener" />
+
+        <variable
+            name="isGone"
+            type="Boolean" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/itemTaskCardView"
+        goneUnless="@{isGone}"
+        onLongClick="@{() -> longClickListener.onAction()}"
+        onSafeClick="@{clickListener::onAction}"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_micro"
+        app:cardBackgroundColor="@color/gs_color_surface"
+        app:cardCornerRadius="@dimen/radius_very_large"
+        app:cardElevation="@dimen/elevation_normal">
+
+        <View
+            android:id="@+id/line"
+            style="@style/Widget.Goharshad.HorizontalLine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_gravity="bottom" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_64sdp"
+            android:padding="@dimen/_8sdp">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cb_task_item_is_done"
+                onCheckedChange="@{checkedChangeListener}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:button="@drawable/epoxy_custom_checkbox"
+                android:checked="@{isDone}"
+                android:stateListAnimator="@animator/checkbox_scale_animator"
+                app:buttonTint="@color/gs_blue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_tasks_item_title"
+                style="@style/TextAppearance.Goharshad.AllTasks.Item.Title"
+                setStrike="@{isDone}"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_micro"
+                android:text="@{title}"
+                android:textAlignment="viewStart"
+                android:textColor="@{isDone ? @color/darker_gray : @color/global_text_color }"
+                app:layout_constraintEnd_toStartOf="@id/tvDueDate"
+                app:layout_constraintStart_toEndOf="@id/cb_task_item_is_done"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@tools:sample/lorem" />
+
+            <TextView
+                android:id="@+id/tv_tasks_item_description"
+                style="@style/TextAppearance.Goharshad.AllTasks.Item.Description"
+                setStrike="@{isDone}"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_micro"
+                android:gravity="center_vertical"
+                android:text="@{description}"
+                android:textAlignment="viewStart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvDueDate"
+                app:layout_constraintStart_toEndOf="@+id/br_tasks_item_helper"
+                app:layout_constraintTop_toBottomOf="@id/tv_tasks_item_title"
+                tools:text="@tools:sample/lorem" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvDueDate"
+                style="@style/TextAppearance.Goharshad.AllTasks.Item.DueTime"
+                goneUnless="@{dueDate == null}"
+                setStrike="@{isDone}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:textAllCaps="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/material_on_surface_stroke"
+                tools:text="10:00 AM" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/br_tasks_item_helper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="end"
+                app:constraint_referenced_ids="cb_task_item_is_done" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

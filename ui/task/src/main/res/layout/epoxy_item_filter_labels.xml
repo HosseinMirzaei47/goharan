@@ -1,0 +1,25 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="filterClickListener"
+            type="com.carpet.goharshad.ui.utils.EpoxyActionListener" />
+
+        <variable
+            name="clickListener"
+            type="com.carpet.goharshad.ui.utils.EpoxyActionListener" />
+
+    </data>
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/filter_label"
+        style="@style/Widget.Goharshad.FilterChip.Closeable"
+        onSafeClick="@{filterClickListener::onAction}"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginEnd="@dimen/margin_small"
+        tools:text="@tools:sample/first_names" />
+
+</layout>

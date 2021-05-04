@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="create_task_due_date_label">%d %s %d</string>
+    <string name="create_task_reminder_label">%s %d, %d:%d</string>
+    <string name="all_task_fragment_title">All Tasks</string>
+    <string name="error_blank_title">Please enter a title</string>
+    <string name="error_reminder_passed_due_time">You can not set a reminder for a time in the past</string>
+    <string name="apply_filter">Apply Filters</string>
+    <string name="filter_from">From</string>
+    <string name="filter_to">To</string>
+    <string name="filter_Today">Today</string>
+    <string name="filter_in_7_days">In 7 days</string>
+    <string name="filter_in_30_days">In 30 days</string>
+    <string name="filter_this_custom">Custom</string>
+    <string name="no_tasks_yet">No Tasks Yet...</string>
+    <string name="clear">"Clear "</string>
+    <string name="filter_date_label">%d/%d/%d</string>
+    <string name="no_duedate_time">No Start And End Date</string>
+    <string name="reset_filters">reset filters</string>
+    <string name="filter_tasks">Filter tasks</string>
+    <string name="priority_low_labeled">Priority Low</string>
+    <string name="priority_med_labeled">Priority Medium</string>
+    <string name="priority_high_labeled">Priority High</string>
+    <string name="priority">Priority</string>
+    <string name="categories">Categories</string>
+    <string name="tags">Tags</string>
+    <string name="set_date_and_time">Set Date and Time</string>
+    <string name="set_date">Set Date</string>
+    <string name="set_time">Select Time</string>
+    <string name="pick_date">Pick a date</string>
+    <string name="pick_time">Pick a Time</string>
+    <string name="no_date">No Date</string>
+    <string name="no_time">No Time</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="more">More</string>
+    <string name="sample_time">07:00</string>
+    <string name="priority_unset">None</string>
+    <string name="priority_low">Low</string>
+    <string name="priority_high">High</string>
+    <string name="priority_medium">Medium</string>
+    <string name="reminder_unset">None</string>
+    <string name="category_unset">None</string>
+    <string name="category_work">Work</string>
+    <string name="category_personal">Personal</string>
+    <string name="category_wish_list">Wish List</string>
+</resources>
