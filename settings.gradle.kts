@@ -4,7 +4,7 @@ include(":domain")
 include(":data")
 include(":shared")
 include(":app")
-include(":ui:task")
+include(":ui:home")
 include(":common:ui")
 include(":common:android")
-rootProject.name = "ToDo"
+rootProject.name = "Goharshad"

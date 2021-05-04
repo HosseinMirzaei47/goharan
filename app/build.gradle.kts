@@ -24,7 +24,7 @@ android {
 }
 
 dependencies {
-    implementation(project((":ui:task")))
+    implementation(project((":ui:home")))
     implementation(project((":data")))
     implementation(project((":common:android")))
     implementation(project((":common:ui")))
