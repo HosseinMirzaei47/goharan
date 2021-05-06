@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/blog_graph"
+    app:startDestination="@id/blogsFragment">
+
+    <fragment
+        android:id="@+id/blogsFragment"
+        android:name="com.carpet.goharshad.BlogsFragment"
+        android:label="BlogsFragment"
+        tools:layout="@layout/fragment_blogs" />
+
+</navigation>

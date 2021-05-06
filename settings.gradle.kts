@@ -1,3 +1,5 @@
+include(":ui:fees")
+include(":ui:blog")
 include(":model")
 include(":model-android")
 include(":domain")

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="services">Services</string>
-    <string name="blog">Blog</string>
+    <string name="services">خدمات</string>
+    <string name="blogs">وبلاگ</string>
     <string name="fees">تعرفه ها</string>
 </resources>

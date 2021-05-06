@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="services">Services</string>
-    <string name="blog">Blog</string>
+    <string name="blogs">Blogs</string>
     <string name="fees">Fees</string>
 </resources>

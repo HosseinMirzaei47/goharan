@@ -92,3 +92,5 @@ lint/tmp/
 /.idea/
 /.gradle
 /local.properties
+/buildSrc/build/
+/buildSrc/.gradle/
