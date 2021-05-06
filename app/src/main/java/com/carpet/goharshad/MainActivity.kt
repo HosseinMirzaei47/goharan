@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.LiveData
 import androidx.navigation.NavController
-import androidx.navigation.ui.setupActionBarWithNavController
 import com.carpet.goharshad.databinding.ActivityMainBinding
 import com.carpet.goharshad.ui.utils.setupWithNavController
 import dagger.hilt.android.AndroidEntryPoint
@@ -29,21 +28,9 @@ class MainActivity : AppCompatActivity() {
             vm = viewModel
         }
 
-        setSupportActionBar(binding.mainToolbar)
-
         if (savedInstanceState == null) {
             setupBottomNavigationBar()
         }
-    }
-
-    private fun restartActivity() {
-        finish()
-        /*val pendingIntent = NavDeepLinkBuilder(this)
-            .setGraph(R.navigation.profile_graph)
-            .setDestination(R.id.settingsFragment)
-            .createPendingIntent()
-        pendingIntent.send()*/
-        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
     }
 
     override fun attachBaseContext(newBase: Context?) {
@@ -64,9 +51,6 @@ class MainActivity : AppCompatActivity() {
             intent = intent
         )
 
-        controller.observe(this) {
-            setupActionBarWithNavController(it)
-        }
         currentNavController = controller
     }
 
