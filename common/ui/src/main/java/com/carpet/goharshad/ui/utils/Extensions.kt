@@ -5,7 +5,8 @@ import android.view.MotionEvent
 import android.view.View
 import androidx.lifecycle.MutableLiveData
 import com.carpet.goharshad.ui.snackbar.SnackbarMessage
-import java.util.*
+import java.util.Calendar
+import java.util.Locale
 
 fun Int.getMonthName(style: Int = Calendar.LONG): String? {
     val calendar = Calendar.getInstance()

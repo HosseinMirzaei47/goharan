@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/bottomSheetLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_task_title"
+                style="@style/Widget.Goharshad.Common.TextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconDrawable="@drawable/ic_add_task_input"
+                app:endIconMode="custom">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/Widget.Goharshad.TextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_task_description"
+                style="@style/Widget.Goharshad.Common.TextInput"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/Widget.Goharshad.TextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:inputType="text"
+                    android:isScrollContainer="true"
+                    android:scrollHorizontally="false" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:id="@+id/divider_desc_date"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:background="@drawable/gradient_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_small"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_set_date_time"
+                    style="@style/Goharshad.MaterialComponents.TextButton.AddTask"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="start|center_vertical"
+                    app:icon="@drawable/ic_more" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_more"
+                    style="@style/Goharshad.MaterialComponents.TextButton.AddTask"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end|center_vertical"
+                    app:icon="@drawable/ic_more"
+                    app:iconGravity="textStart" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_set_date_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Goharshad.MaterialComponents.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_date" />
+
+                <RadioGroup
+                    android:id="@+id/rg_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkedButton="@id/rb_no_date"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_no_date"
+                        style="@style/Widget.Goharshad.Common.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/radio_button_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/margin_micro"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        style="@style/Widget.Goharshad.Common.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/radio_button_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/margin_micro"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        style="@style/Widget.Goharshad.Common.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/radio_button_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/margin_micro"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        style="@style/Widget.Goharshad.Common.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/radio_button_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/margin_micro"
+                        android:layout_weight="1" />
+
+                </RadioGroup>
+
+                <View
+                    android:id="@+id/divider_date_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:background="@drawable/gradient_divider" />
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Goharshad.MaterialComponents.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_time" />
+
+                <RadioGroup
+                    android:id="@+id/rg_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkedButton="@id/rb_no_time"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_no_time"
+                        style="@style/Widget.Goharshad.Common.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/radio_button_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/margin_micro"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        style="@style/Widget.Goharshad.Common.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/radio_button_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/margin_micro"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        style="@style/Widget.Goharshad.Common.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/radio_button_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/margin_micro"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        style="@style/Widget.Goharshad.Common.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/radio_button_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/margin_micro"
+                        android:layout_weight="1" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/divider_time_priority"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:background="@drawable/gradient_divider" />
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Goharshad.MaterialComponents.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_priority" />
+
+                <RadioGroup
+                    android:id="@+id/rg_priority"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkedButton="@id/rb_priority_unset"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_priority_unset"
+                        style="@style/Widget.Goharshad.Common.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/radio_button_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/margin_micro"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        style="@style/Widget.Goharshad.Common.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/radio_button_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/margin_micro"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        style="@style/Widget.Goharshad.Common.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/radio_button_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/margin_micro"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        style="@style/Widget.Goharshad.Common.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/radio_button_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/margin_micro"
+                        android:layout_weight="1" />
+
+                </RadioGroup>
+
+                <View
+                    android:id="@+id/divider_priority_reminder"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:background="@drawable/gradient_divider" />
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Goharshad.MaterialComponents.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_reminder" />
+
+                <RadioGroup
+                    android:id="@+id/rg_reminder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkedButton="@id/rb_no_reminder"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_no_reminder"
+                        style="@style/Widget.Goharshad.Common.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/radio_button_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/margin_micro"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        style="@style/Widget.Goharshad.Common.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/radio_button_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/margin_micro"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        style="@style/Widget.Goharshad.Common.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/radio_button_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/margin_micro"
+                        android:layout_weight="1" />
+
+                </RadioGroup>
+
+                <View
+                    android:id="@+id/divider_reminder_categories"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:background="@drawable/gradient_divider" />
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Goharshad.MaterialComponents.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_category" />
+
+                <RadioGroup
+                    android:id="@+id/rg_categories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkedButton="@id/rb_no_category"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_no_category"
+                        style="@style/Widget.Goharshad.Common.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/radio_button_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/margin_micro"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        style="@style/Widget.Goharshad.Common.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/radio_button_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/margin_micro"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        style="@style/Widget.Goharshad.Common.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/radio_button_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/margin_micro"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        style="@style/Widget.Goharshad.Common.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/radio_button_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/margin_micro"
+                        android:layout_weight="1" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_apply"
+                style="@style/Widget.Goharshad.Submit.Button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/margin_normal" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

@@ -3,17 +3,18 @@ package com.carpet.goharshad
 import android.content.Context
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.appcompat.app.AppCompatDelegate.*
+import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
+import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_NO
+import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_YES
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.createDataStore
 import com.carpet.goharshad.android.ApplicationScope
 import com.carpet.goharshad.data.utils.DataStoreConstants
 import com.carpet.goharshad.data.utils.DataStoreConstants.DATA_STORE_NAME
+import java.util.Locale
+import javax.inject.Inject
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
-import java.util.*
-import javax.inject.Inject
-
 
 @ApplicationScope
 class SettingsHelper @Inject constructor(private val context: Context) {

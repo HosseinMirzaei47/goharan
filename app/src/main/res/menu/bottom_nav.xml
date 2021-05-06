@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:id="@+id/task_graph"
-        android:icon="@drawable/ic_tasks"
-        android:title="@string/bottom_nav_title_tasks" />
 
     <item
-        android:id="@+id/profile_graph"
+        android:id="@+id/fees_graph"
+        android:icon="@drawable/ic_tasks"
+        android:title="@string/fees" />
+
+    <item
+        android:id="@+id/services_graph"
+        android:icon="@drawable/ic_tasks"
+        android:title="@string/services" />
+
+    <item
+        android:id="@+id/blog_graph"
         android:icon="@drawable/ic_category"
-        android:title="@string/profile" />
+        android:title="@string/blogs" />
 
 </menu>

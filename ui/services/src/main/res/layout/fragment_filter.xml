@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/bottomSheetLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gs_color_surface"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/line"
+                layout="@layout/horizontal_top_line" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_filter_title"
+                    style="@style/TextAppearance.Goharshad.Task.NewTask.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_normal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/btn_reset_filters"
+                    app:layout_constraintHorizontal_chainStyle="spread_inside"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_reset_filters"
+                    style="@style/AlertTextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_normal"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_filter_title"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tv_filter_title"
+                    app:layout_constraintTop_toTopOf="@id/tv_filter_title"
+                    tools:layout_editor_absoluteY="0dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_normal"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:background="@drawable/rectangle_card_background_white"
+                android:backgroundTint="@color/gs_color_surface"
+                android:padding="@dimen/margin_small">
+
+                <TextView
+                    android:id="@+id/text_date_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?textAppearanceBody1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButtonToggleGroup
+                    android:id="@+id/toggle_group_date_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_micro"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_date_label"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_due_date_today"
+                        style="@style/Widget.Goharshad.Filter.Button.Filter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceRoundRight" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_due_date_seven_days"
+                        style="@style/Widget.Goharshad.Filter.Button.Filter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="none"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceRoundLeft" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_due_date_thirty_days"
+                        style="@style/Widget.Goharshad.Filter.Button.Filter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceRoundLeft" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_due_date_custom"
+                        style="@style/Widget.Goharshad.Filter.Button.Filter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceRoundLeft" />
+
+                </com.google.android.material.button.MaterialButtonToggleGroup>
+
+                <View
+                    android:id="@+id/view_start_date"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/rectangle_card_background_white"
+                    app:layout_constraintBottom_toBottomOf="@id/input_text_start_date"
+                    app:layout_constraintEnd_toStartOf="@id/view_end_date"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/input_text_start_date" />
+
+                <TextView
+                    android:id="@+id/text_start_date_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_small"
+                    app:layout_constraintBaseline_toBaselineOf="@id/input_text_start_date"
+                    app:layout_constraintStart_toStartOf="@id/view_start_date" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_text_start_date"
+                    style="@style/Widget.Goharshad.Filter.TextInputEditText.UnWritable"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textAppearance="?textAppearanceBody2"
+                    android:textDirection="ltr"
+                    android:textSize="@dimen/_10sdp"
+                    app:layout_constraintEnd_toEndOf="@id/view_start_date"
+                    app:layout_constraintStart_toEndOf="@id/text_start_date_label"
+                    app:layout_constraintTop_toBottomOf="@id/toggle_group_date_type"
+                    tools:text="1398/04/29" />
+
+                <View
+                    android:id="@+id/view_end_date"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/margin_normal"
+                    android:background="@drawable/rectangle_card_background_white"
+                    app:layout_constraintBottom_toBottomOf="@id/input_text_end_date"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/view_start_date"
+                    app:layout_constraintTop_toTopOf="@id/input_text_end_date" />
+
+                <TextView
+                    android:id="@+id/text_end_date_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_small"
+                    app:layout_constraintBaseline_toBaselineOf="@id/input_text_start_date"
+                    app:layout_constraintStart_toStartOf="@id/view_end_date" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_text_end_date"
+                    style="@style/Widget.Goharshad.Filter.TextInputEditText.UnWritable"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textAppearance="?textAppearanceBody2"
+                    android:textDirection="ltr"
+                    android:textSize="@dimen/_10sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/text_end_date_label"
+                    app:layout_constraintTop_toBottomOf="@id/toggle_group_date_type"
+                    tools:text="1398/04/29" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_normal"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:background="@drawable/rectangle_card_background_white"
+                android:backgroundTint="@color/gs_color_surface"
+                android:padding="@dimen/margin_small">
+
+                <TextView
+                    android:id="@+id/text_status_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?textAppearanceBody1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chip_group_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:chipSpacingHorizontal="@dimen/margin_normal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text_status_label"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_status_done"
+                        style="@style/Widget.Goharshad.FilterChip.Selectable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_status_undone"
+                        style="@style/Widget.Goharshad.FilterChip.Selectable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_normal"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:background="@drawable/rectangle_card_background_white"
+                android:backgroundTint="@color/gs_color_surface"
+                android:padding="@dimen/margin_small">
+
+                <TextView
+                    android:id="@+id/text_reminder_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?textAppearanceBody1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chip_group_reminder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:chipSpacingHorizontal="@dimen/margin_normal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text_reminder_label"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_has_reminder"
+                        style="@style/Widget.Goharshad.FilterChip.Selectable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_has_no_reminder"
+                        style="@style/Widget.Goharshad.FilterChip.Selectable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_normal"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:background="@drawable/rectangle_card_background_white"
+                android:backgroundTint="@color/gs_color_surface"
+                android:padding="@dimen/margin_small">
+
+                <TextView
+                    android:id="@+id/text_priority_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?textAppearanceBody1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chip_group_priority"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:chipSpacingHorizontal="@dimen/margin_normal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text_priority_label"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_priority_low"
+                        style="@style/Widget.Goharshad.FilterChip.Selectable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_priority_med"
+                        style="@style/Widget.Goharshad.FilterChip.Selectable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_priority_high"
+                        style="@style/Widget.Goharshad.FilterChip.Selectable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/recyclerViewContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_normal"
+                android:layout_marginTop="@dimen/margin_small"
+                android:background="@drawable/rectangle_card_background_white"
+                android:backgroundTint="@color/gs_color_surface"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_small">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?textAppearanceBody1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.airbnb.epoxy.EpoxyRecyclerView
+                    android:id="@+id/categoriesRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_apply"
+                style="@style/Widget.Goharshad.Submit.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_normal"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:layout_marginBottom="@dimen/margin_small" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

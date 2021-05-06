@@ -18,7 +18,7 @@
         <activity
             android:name="com.carpet.goharshad.MainActivity"
             android:windowSoftInputMode="adjustNothing">
-            <nav-graph android:value="@navigation/task_graph" />
+            <nav-graph android:value="@navigation/services_graph" />
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
