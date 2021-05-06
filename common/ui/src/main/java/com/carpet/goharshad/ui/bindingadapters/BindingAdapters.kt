@@ -24,9 +24,7 @@ import com.google.android.material.chip.Chip
 
 @BindingAdapter("loadImage")
 fun ImageView.loadImage(url: String) {
-    load(url) {
-        crossfade(true)
-    }
+    load(url) { crossfade(true) }
 }
 
 @BindingAdapter("goneUnless")
@@ -103,32 +101,19 @@ fun ImageView.loadImageRes(@DrawableRes imageRes: Int) {
     Glide.with(context).load(imageRes).into(this)
 }
 
-@BindingAdapter("setCompleteCounts")
-fun TextView.setCompleteCounts(count: Int) {
-    text = context.getString(
-        R.string.complete_count,
-        count
-    )
-}
-
 @BindingAdapter("setStrike")
 fun TextView.setStrike(flag: Boolean) {
     paintFlags = if (flag)
         paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
     else
         paintFlags and Paint.STRIKE_THRU_TEXT_FLAG.inv()
-
 }
 
 @BindingAdapter("goneUnlessWithAnimation")
 fun View.goneUnlessWithAnimation(value: Boolean) {
     if (value) {
-        animate().alpha(0.0f).withEndAction {
-            isGone = true
-        }
+        animate().alpha(0.0f).withEndAction { isGone = true }
     } else {
-        animate().alpha(1.0f).withStartAction {
-            isGone = false
-        }
+        animate().alpha(1.0f).withStartAction { isGone = false }
     }
 }

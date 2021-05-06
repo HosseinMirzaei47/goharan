@@ -34,8 +34,6 @@
                     style="@style/Widget.Goharshad.TextInputEditText"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:autofillHints="@string/hint_task_title"
-                    android:hint="@string/hint_task_title"
                     android:inputType="text" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -50,9 +48,7 @@
                     style="@style/Widget.Goharshad.TextInputEditText"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:autofillHints="@string/hint_task_description"
                     android:gravity="top"
-                    android:hint="@string/hint_task_description"
                     android:inputType="text"
                     android:isScrollContainer="true"
                     android:scrollHorizontally="false" />
@@ -132,8 +128,7 @@
                         android:layout_height="@dimen/radio_button_height"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="@dimen/margin_micro"
-                        android:layout_weight="1"
-                        android:text="@string/today" />
+                        android:layout_weight="1" />
 
                     <RadioButton
                         style="@style/Widget.Goharshad.Common.RadioButton"
@@ -297,7 +292,6 @@
                     style="@style/Goharshad.MaterialComponents.TextButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/reminder"
                     app:icon="@drawable/ic_reminder" />
 
                 <RadioGroup
@@ -405,8 +399,7 @@
                 style="@style/Widget.Goharshad.Submit.Button"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_35sdp"
-                android:layout_marginTop="@dimen/margin_normal"
-                android:text="@string/save" />
+                android:layout_marginTop="@dimen/margin_normal" />
 
         </LinearLayout>
 

@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupBottomNavigationBar() {
 
-        val navGraphIds = listOf(R.navigation.task_graph)
+        val navGraphIds = listOf(R.navigation.services_graph)
 
         val controller = binding.bottomNav.setupWithNavController(
             navGraphIds = navGraphIds,

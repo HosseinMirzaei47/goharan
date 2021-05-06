@@ -4,7 +4,7 @@ include(":domain")
 include(":data")
 include(":shared")
 include(":app")
-include(":ui:home")
+include(":ui:services")
 include(":common:ui")
 include(":common:android")
 rootProject.name = "Goharshad"

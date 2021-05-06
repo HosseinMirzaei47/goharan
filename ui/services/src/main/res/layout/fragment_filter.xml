@@ -36,7 +36,6 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_reset_filters"
                     style="@style/AlertTextButton"
@@ -65,7 +64,6 @@
                     android:id="@+id/text_date_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/due_date"
                     android:textAppearance="?textAppearanceBody1"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -206,7 +204,6 @@
                     android:id="@+id/text_status_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/status"
                     android:textAppearance="?textAppearanceBody1"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -224,15 +221,13 @@
                         android:id="@+id/chip_status_done"
                         style="@style/Widget.Goharshad.FilterChip.Selectable"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/done" />
+                        android:layout_height="wrap_content" />
 
                     <com.google.android.material.chip.Chip
                         android:id="@+id/chip_status_undone"
                         style="@style/Widget.Goharshad.FilterChip.Selectable"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/undone" />
+                        android:layout_height="wrap_content" />
 
                 </com.google.android.material.chip.ChipGroup>
 
@@ -251,7 +246,6 @@
                     android:id="@+id/text_reminder_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/has_reminder"
                     android:textAppearance="?textAppearanceBody1"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -269,15 +263,13 @@
                         android:id="@+id/chip_has_reminder"
                         style="@style/Widget.Goharshad.FilterChip.Selectable"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/have_reminder" />
+                        android:layout_height="wrap_content" />
 
                     <com.google.android.material.chip.Chip
                         android:id="@+id/chip_has_no_reminder"
                         style="@style/Widget.Goharshad.FilterChip.Selectable"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/have_not_reminder" />
+                        android:layout_height="wrap_content" />
 
                 </com.google.android.material.chip.ChipGroup>
 
