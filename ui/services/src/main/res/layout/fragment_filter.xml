@@ -29,7 +29,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/margin_normal"
-                    android:text="@string/filter_tasks"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@id/btn_reset_filters"
                     app:layout_constraintHorizontal_chainStyle="spread_inside"
@@ -42,7 +41,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/margin_normal"
-                    android:text="@string/reset_filters"
                     app:layout_constraintBottom_toBottomOf="@id/tv_filter_title"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/tv_filter_title"
@@ -85,7 +83,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/filter_Today"
                         app:shapeAppearanceOverlay="@style/ShapeAppearanceRoundRight" />
 
                     <com.google.android.material.button.MaterialButton
@@ -95,7 +92,6 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:ellipsize="none"
-                        android:text="@string/filter_in_7_days"
                         app:shapeAppearanceOverlay="@style/ShapeAppearanceRoundLeft" />
 
                     <com.google.android.material.button.MaterialButton
@@ -104,7 +100,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/filter_in_30_days"
                         app:shapeAppearanceOverlay="@style/ShapeAppearanceRoundLeft" />
 
                     <com.google.android.material.button.MaterialButton
@@ -113,7 +108,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/filter_this_custom"
                         app:shapeAppearanceOverlay="@style/ShapeAppearanceRoundLeft" />
 
                 </com.google.android.material.button.MaterialButtonToggleGroup>
@@ -133,7 +127,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/margin_small"
-                    android:text="@string/filter_from"
                     app:layout_constraintBaseline_toBaselineOf="@id/input_text_start_date"
                     app:layout_constraintStart_toStartOf="@id/view_start_date" />
 
@@ -169,7 +162,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/margin_small"
-                    android:text="@string/filter_to"
                     app:layout_constraintBaseline_toBaselineOf="@id/input_text_start_date"
                     app:layout_constraintStart_toStartOf="@id/view_end_date" />
 
@@ -288,7 +280,6 @@
                     android:id="@+id/text_priority_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/priority"
                     android:textAppearance="?textAppearanceBody1"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -306,22 +297,19 @@
                         android:id="@+id/chip_priority_low"
                         style="@style/Widget.Goharshad.FilterChip.Selectable"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/priority_low" />
+                        android:layout_height="wrap_content" />
 
                     <com.google.android.material.chip.Chip
                         android:id="@+id/chip_priority_med"
                         style="@style/Widget.Goharshad.FilterChip.Selectable"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/priority_medium" />
+                        android:layout_height="wrap_content" />
 
                     <com.google.android.material.chip.Chip
                         android:id="@+id/chip_priority_high"
                         style="@style/Widget.Goharshad.FilterChip.Selectable"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/priority_high" />
+                        android:layout_height="wrap_content" />
 
                 </com.google.android.material.chip.ChipGroup>
 
@@ -341,7 +329,6 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/priority"
                     android:textAppearance="?textAppearanceBody1"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -362,8 +349,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/margin_normal"
                 android:layout_marginTop="@dimen/margin_normal"
-                android:layout_marginBottom="@dimen/margin_small"
-                android:text="@string/apply_filter" />
+                android:layout_marginBottom="@dimen/margin_small" />
 
         </LinearLayout>
 

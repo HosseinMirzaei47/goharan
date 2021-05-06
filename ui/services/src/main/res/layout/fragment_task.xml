@@ -76,7 +76,6 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
                     android:gravity="start|center_vertical"
-                    android:text="@string/set_date_and_time"
                     app:icon="@drawable/ic_more" />
 
                 <com.google.android.material.button.MaterialButton
@@ -86,7 +85,6 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="end|center_vertical"
-                    android:text="@string/more"
                     app:icon="@drawable/ic_more"
                     app:iconGravity="textStart" />
 
@@ -102,7 +100,6 @@
                     style="@style/Goharshad.MaterialComponents.TextButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/set_date"
                     app:icon="@drawable/ic_date" />
 
                 <RadioGroup
@@ -119,8 +116,7 @@
                         android:layout_height="@dimen/radio_button_height"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="@dimen/margin_micro"
-                        android:layout_weight="1"
-                        android:text="@string/no_date" />
+                        android:layout_weight="1" />
 
                     <RadioButton
                         style="@style/Widget.Goharshad.Common.RadioButton"
@@ -136,8 +132,7 @@
                         android:layout_height="@dimen/radio_button_height"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="@dimen/margin_micro"
-                        android:layout_weight="1"
-                        android:text="@string/tomorrow" />
+                        android:layout_weight="1" />
 
                     <RadioButton
                         style="@style/Widget.Goharshad.Common.RadioButton"
@@ -145,8 +140,7 @@
                         android:layout_height="@dimen/radio_button_height"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="@dimen/margin_micro"
-                        android:layout_weight="1"
-                        android:text="@string/pick_date" />
+                        android:layout_weight="1" />
 
                 </RadioGroup>
 
@@ -162,7 +156,6 @@
                     style="@style/Goharshad.MaterialComponents.TextButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/set_time"
                     app:icon="@drawable/ic_time" />
 
                 <RadioGroup
@@ -179,8 +172,7 @@
                         android:layout_height="@dimen/radio_button_height"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="@dimen/margin_micro"
-                        android:layout_weight="1"
-                        android:text="@string/no_time" />
+                        android:layout_weight="1" />
 
                     <RadioButton
                         style="@style/Widget.Goharshad.Common.RadioButton"
@@ -188,8 +180,7 @@
                         android:layout_height="@dimen/radio_button_height"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="@dimen/margin_micro"
-                        android:layout_weight="1"
-                        android:text="@string/sample_time" />
+                        android:layout_weight="1" />
 
                     <RadioButton
                         style="@style/Widget.Goharshad.Common.RadioButton"
@@ -197,8 +188,7 @@
                         android:layout_height="@dimen/radio_button_height"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="@dimen/margin_micro"
-                        android:layout_weight="1"
-                        android:text="@string/sample_time" />
+                        android:layout_weight="1" />
 
                     <RadioButton
                         style="@style/Widget.Goharshad.Common.RadioButton"
@@ -206,8 +196,7 @@
                         android:layout_height="@dimen/radio_button_height"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="@dimen/margin_micro"
-                        android:layout_weight="1"
-                        android:text="@string/pick_time" />
+                        android:layout_weight="1" />
 
                 </RadioGroup>
 
@@ -231,7 +220,6 @@
                     style="@style/Goharshad.MaterialComponents.TextButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/priority"
                     app:icon="@drawable/ic_priority" />
 
                 <RadioGroup
@@ -248,8 +236,7 @@
                         android:layout_height="@dimen/radio_button_height"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="@dimen/margin_micro"
-                        android:layout_weight="1"
-                        android:text="@string/priority_unset" />
+                        android:layout_weight="1" />
 
                     <RadioButton
                         style="@style/Widget.Goharshad.Common.RadioButton"
@@ -257,8 +244,7 @@
                         android:layout_height="@dimen/radio_button_height"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="@dimen/margin_micro"
-                        android:layout_weight="1"
-                        android:text="@string/priority_low" />
+                        android:layout_weight="1" />
 
                     <RadioButton
                         style="@style/Widget.Goharshad.Common.RadioButton"
@@ -266,8 +252,7 @@
                         android:layout_height="@dimen/radio_button_height"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="@dimen/margin_micro"
-                        android:layout_weight="1"
-                        android:text="@string/priority_medium" />
+                        android:layout_weight="1" />
 
                     <RadioButton
                         style="@style/Widget.Goharshad.Common.RadioButton"
@@ -275,8 +260,7 @@
                         android:layout_height="@dimen/radio_button_height"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="@dimen/margin_micro"
-                        android:layout_weight="1"
-                        android:text="@string/priority_high" />
+                        android:layout_weight="1" />
 
                 </RadioGroup>
 
@@ -308,8 +292,7 @@
                         android:layout_height="@dimen/radio_button_height"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="@dimen/margin_micro"
-                        android:layout_weight="1"
-                        android:text="@string/reminder_unset" />
+                        android:layout_weight="1" />
 
                     <RadioButton
                         style="@style/Widget.Goharshad.Common.RadioButton"
@@ -317,8 +300,7 @@
                         android:layout_height="@dimen/radio_button_height"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="@dimen/margin_micro"
-                        android:layout_weight="1"
-                        android:text="@string/sample_time" />
+                        android:layout_weight="1" />
 
                     <RadioButton
                         style="@style/Widget.Goharshad.Common.RadioButton"
@@ -326,8 +308,7 @@
                         android:layout_height="@dimen/radio_button_height"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="@dimen/margin_micro"
-                        android:layout_weight="1"
-                        android:text="@string/pick_time" />
+                        android:layout_weight="1" />
 
                 </RadioGroup>
 
@@ -343,7 +324,6 @@
                     style="@style/Goharshad.MaterialComponents.TextButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/categories"
                     app:icon="@drawable/ic_category" />
 
                 <RadioGroup
@@ -360,8 +340,7 @@
                         android:layout_height="@dimen/radio_button_height"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="@dimen/margin_micro"
-                        android:layout_weight="1"
-                        android:text="@string/category_unset" />
+                        android:layout_weight="1" />
 
                     <RadioButton
                         style="@style/Widget.Goharshad.Common.RadioButton"
@@ -369,8 +348,7 @@
                         android:layout_height="@dimen/radio_button_height"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="@dimen/margin_micro"
-                        android:layout_weight="1"
-                        android:text="@string/category_work" />
+                        android:layout_weight="1" />
 
                     <RadioButton
                         style="@style/Widget.Goharshad.Common.RadioButton"
@@ -378,8 +356,7 @@
                         android:layout_height="@dimen/radio_button_height"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="@dimen/margin_micro"
-                        android:layout_weight="1"
-                        android:text="@string/category_personal" />
+                        android:layout_weight="1" />
 
                     <RadioButton
                         style="@style/Widget.Goharshad.Common.RadioButton"
@@ -387,8 +364,7 @@
                         android:layout_height="@dimen/radio_button_height"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="@dimen/margin_micro"
-                        android:layout_weight="1"
-                        android:text="@string/category_wish_list" />
+                        android:layout_weight="1" />
 
                 </RadioGroup>
 
