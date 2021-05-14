@@ -13,8 +13,13 @@
         android:title="@string/fees" />
 
     <item
+        android:id="@+id/more_graph"
+        android:icon="@drawable/ic_category"
+        android:title="@string/more" />
+
+    <!--<item
         android:id="@+id/blog_graph"
         android:icon="@drawable/ic_category"
-        android:title="@string/blogs" />
+        android:title="@string/blogs" />-->
 
 </menu>
