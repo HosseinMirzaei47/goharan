@@ -24,9 +24,9 @@ android {
 }
 
 dependencies {
-    implementation(project((":ui:services")))
-    implementation(project((":ui:blog")))
-    implementation(project((":ui:fees")))
+    implementation(project((":ui-services")))
+    implementation(project((":ui-blog")))
+    implementation(project((":ui-fees")))
     implementation(project((":data")))
     implementation(project((":common:android")))
     implementation(project((":common:ui")))

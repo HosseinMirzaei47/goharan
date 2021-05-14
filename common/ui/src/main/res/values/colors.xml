@@ -24,7 +24,7 @@
     <color name="dim_gray">#707070</color>
     <color name="gray">#bebebe</color>
     <color name="pink_swan">#b8b8b8</color>
-    <color name="toolbar_title">#0f2a41</color>
+    <color name="dark_header">#0f2a41</color>
     <color name="status_completed">#b33caea3</color>
     <color name="status_delayed">#b3f6d55c</color>
     <color name="status_cancelled">#ff8874</color>

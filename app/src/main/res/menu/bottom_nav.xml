@@ -2,14 +2,15 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/services_graph"
+        android:checked="true"
+        android:icon="@drawable/ic_tasks"
+        android:title="@string/services" />
+
+    <item
         android:id="@+id/fees_graph"
         android:icon="@drawable/ic_tasks"
         android:title="@string/fees" />
-
-    <item
-        android:id="@+id/services_graph"
-        android:icon="@drawable/ic_tasks"
-        android:title="@string/services" />
 
     <item
         android:id="@+id/blog_graph"
