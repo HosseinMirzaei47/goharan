@@ -84,7 +84,7 @@
 
             <TextView
                 android:id="@+id/tv_tasks_item_title"
-                style="@style/TextAppearance.Goharshad.Services.Item.Title"
+                style="@style/TextAppearance.Goharshad.Item.Title"
                 setStrike="@{isDone}"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

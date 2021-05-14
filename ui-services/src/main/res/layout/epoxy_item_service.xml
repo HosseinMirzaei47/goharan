@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_micro"
-        android:backgroundTint="#f2f6ff"
+        app:cardBackgroundColor="#f2f6ff"
         android:clickable="true"
         android:focusable="true"
         app:cardCornerRadius="@dimen/radius_large"
@@ -29,7 +29,7 @@
                 android:src="@drawable/bucket" />
 
             <TextView
-                style="@style/TextAppearance.Goharshad.Services.Item.Title"
+                style="@style/TextAppearance.Goharshad.Item.Title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

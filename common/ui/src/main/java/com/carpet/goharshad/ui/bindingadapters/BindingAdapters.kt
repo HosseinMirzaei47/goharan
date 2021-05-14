@@ -98,7 +98,10 @@ fun MaterialCardView.setStrokeColorRes(@ColorRes color: Int) {
 
 @BindingAdapter("loadImageRes")
 fun ImageView.loadImageRes(@DrawableRes imageRes: Int) {
-    Glide.with(context).load(imageRes).into(this)
+    Glide.with(context)
+        .load(imageRes)
+        .circleCrop()
+        .into(this)
 }
 
 @BindingAdapter("setStrike")

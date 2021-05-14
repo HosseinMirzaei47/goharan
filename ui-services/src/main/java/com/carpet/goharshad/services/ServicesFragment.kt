@@ -26,9 +26,7 @@ class ServicesFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.rvServices.withModels {
-            repeat(6) { service { id(Random.nextInt()) } }
-        }
+        binding.rvServices.withModels { repeat(21) { service { id(Random.nextInt()) } } }
     }
 
 }
