@@ -43,8 +43,8 @@ class MainActivity : AppCompatActivity() {
     private fun setupBottomNavigationBar() {
 
         val navGraphIds = listOf(
-            R.navigation.fees_graph,
             R.navigation.services_graph,
+            R.navigation.fees_graph,
             R.navigation.more_graph
         )
 
