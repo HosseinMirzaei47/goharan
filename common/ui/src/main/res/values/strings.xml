@@ -3,4 +3,6 @@
     <string name="services">Services</string>
     <string name="blogs">Blogs</string>
     <string name="fees">Fees</string>
+
+    <string name="service_carpet_cleaning">Carpet Cleaning</string>
 </resources>

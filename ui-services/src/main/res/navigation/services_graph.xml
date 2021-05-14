@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/servicesFragment"
-        android:name="com.carpet.goharshad.ServicesFragment"
+        android:name="com.carpet.goharshad.services.ServicesFragment"
         android:label="MyTasksFragment"
         tools:layout="@layout/fragment_services" />
 

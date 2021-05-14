@@ -84,7 +84,7 @@
 
             <TextView
                 android:id="@+id/tv_tasks_item_title"
-                style="@style/TextAppearance.Goharshad.AllTasks.Item.Title"
+                style="@style/TextAppearance.Goharshad.Services.Item.Title"
                 setStrike="@{isDone}"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -100,7 +100,7 @@
 
             <TextView
                 android:id="@+id/tv_tasks_item_description"
-                style="@style/TextAppearance.Goharshad.AllTasks.Item.Description"
+                style="@style/TextAppearance.Goharshad.Services.Item.Description"
                 setStrike="@{isDone}"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -117,7 +117,7 @@
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvDueDate"
-                style="@style/TextAppearance.Goharshad.AllTasks.Item.DueTime"
+                style="@style/TextAppearance.Goharshad.Services.Item.DueTime"
                 goneUnless="@{dueDate == null}"
                 setStrike="@{isDone}"
                 android:layout_width="wrap_content"
