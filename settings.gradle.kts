@@ -1,3 +1,4 @@
+include(":ui-more")
 include(":ui-fees")
 include(":ui-services")
 include(":ui-blog")

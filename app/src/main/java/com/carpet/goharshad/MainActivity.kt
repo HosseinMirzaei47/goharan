@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         val navGraphIds = listOf(
             R.navigation.fees_graph,
             R.navigation.services_graph,
-            R.navigation.blog_graph
+            R.navigation.more_graph
         )
 
         val controller = binding.bottomNav.setupWithNavController(
