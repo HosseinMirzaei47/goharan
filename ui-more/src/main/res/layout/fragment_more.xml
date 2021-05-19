@@ -1,6 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <data>
+
+        <variable
+            name="vm"
+            type="com.carpet.goharshad.more.MoreViewModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_large"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/TextAppearance.Goharshad.Page.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more"
+            android:textColor="@color/dark_header" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_contact_us"
+            style="@style/Goharshad.More.Button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/more_item_height"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:onClick="@{() -> vm.onContactUsClicked()}"
+            android:text="@string/contact_us" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_history_goals"
+            style="@style/Goharshad.More.Button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/more_item_height"
+            android:onClick="@{() -> vm.onHistoryClicked()}"
+            android:text="@string/history_goals" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_disclaimer"
+            style="@style/Goharshad.More.Button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/more_item_height"
+            android:onClick="@{() -> vm.onDisclaimerClicked()}"
+            android:text="@string/disclaimer" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_version"
+            style="@style/Goharshad.More.Button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/more_item_height"
+            android:clickable="false"
+            android:text="@string/version" />
+
+    </LinearLayout>
+
+</layout>

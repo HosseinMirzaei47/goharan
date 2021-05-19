@@ -7,8 +7,40 @@
 
     <fragment
         android:id="@+id/moreFragment"
-        android:name="com.carpet.goharshad.MoreFragment"
+        android:name="com.carpet.goharshad.more.MoreFragment"
         android:label="MyTasksFragment"
-        tools:layout="@layout/fragment_more" />
+        tools:layout="@layout/fragment_more">
+
+        <action
+            android:id="@+id/action_moreFragment_to_contactUsFragment"
+            app:destination="@id/contactUsFragment" />
+
+        <action
+            android:id="@+id/action_moreFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+
+        <action
+            android:id="@+id/action_moreFragment_to_disclaimerFragment"
+            app:destination="@id/disclaimerFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/contactUsFragment"
+        android:name="com.carpet.goharshad.ContactUsFragment"
+        android:label="ContactUsFragment"
+        tools:layout="@layout/fragment_contact_us" />
+
+    <fragment
+        android:id="@+id/disclaimerFragment"
+        android:name="com.carpet.goharshad.DisclaimerFragment"
+        android:label="DisclaimerFragment"
+        tools:layout="@layout/fragment_disclaimer" />
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.carpet.goharshad.HistoryFragment"
+        android:label="HistoryFragment"
+        tools:layout="@layout/fragment_history" />
 
 </navigation>

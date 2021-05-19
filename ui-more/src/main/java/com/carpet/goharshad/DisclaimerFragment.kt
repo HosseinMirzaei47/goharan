@@ -2,4 +2,4 @@ package com.carpet.goharshad
 
 import androidx.fragment.app.Fragment
 
-class MoreFragment : Fragment(R.layout.fragment_more)
+class DisclaimerFragment : Fragment(R.layout.fragment_disclaimer)

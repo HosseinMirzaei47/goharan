@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="contact_us">Contact us</string>
+    <string name="history_goals">History and goals</string>
+    <string name="disclaimer">Disclaimer</string>
+    <string name="version">Version</string>
+</resources>
