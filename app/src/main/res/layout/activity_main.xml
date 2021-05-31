@@ -43,9 +43,9 @@
                 android:background="@drawable/rect_top_rounded"
                 android:paddingHorizontal="@dimen/_32sdp"
                 android:tag="bottom_nav"
-                app:itemIconTint="@color/nav_item_color"
-                app:itemRippleColor="@color/pastel_blue"
-                app:itemTextColor="@color/nav_item_color"
+                app:itemIconTint="@color/gs_white"
+                app:itemRippleColor="@color/light_turquoise"
+                app:itemTextColor="@color/gs_white"
                 app:menu="@menu/bottom_nav" />
 
         </com.google.android.material.bottomappbar.BottomAppBar>

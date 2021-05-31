@@ -6,7 +6,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_micro"
-        app:cardBackgroundColor="#f2f6ff"
         android:clickable="true"
         android:focusable="true"
         app:cardCornerRadius="@dimen/radius_large"
@@ -17,8 +16,8 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_margin="@dimen/margin_small"
-            android:background="#f2f6ff"
-            android:backgroundTint="#f2f6ff"
+            android:background="@color/light_turquoise"
+            android:backgroundTint="@color/light_turquoise"
             android:orientation="vertical">
 
             <ImageView
@@ -26,7 +25,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_60sdp"
                 android:contentDescription="@string/todo"
-                android:src="@drawable/bucket" />
+                android:src="@drawable/ic_clean_up" />
 
             <TextView
                 style="@style/TextAppearance.Goharshad.Item.Title"
@@ -34,11 +33,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginHorizontal="@dimen/margin_micro"
-                android:text="@string/service_carpet_cleaning" />
+                android:text="@string/service_carpet_cleaning"
+                android:textColor="@color/gs_white" />
 
         </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
-
 
 </layout>
