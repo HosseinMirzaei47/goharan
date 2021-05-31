@@ -21,7 +21,7 @@
         android:clickable="true"
         android:elevation="@dimen/_10sdp"
         android:focusable="true"
-        app:cardBackgroundColor="#f2f6ff"
+        app:cardBackgroundColor="@color/light_turquoise"
         app:cardCornerRadius="@dimen/radius_large">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -46,6 +46,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_normal"
                 android:text="@{title}"
+                android:textColor="@color/gs_white"
                 android:textSize="@dimen/text_size_b2"
                 app:layout_constraintBottom_toBottomOf="@id/iv_fee_icon"
                 app:layout_constraintEnd_toEndOf="parent"

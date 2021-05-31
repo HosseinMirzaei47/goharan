@@ -6,7 +6,7 @@
     <color name="gs_alert">@color/marigold</color>
     <color name="gs_status_bar">@color/american_blue</color>
     <color name="global_text_color">@color/lotion</color>
-    <color name="gs_color_surface">@color/independence</color>
+    <color name="gs_color_surface">@color/dark_turquoise</color>
     <color name="gs_color_on_surface">@color/white</color>
     <color name="title_create_task">@color/lotion</color>
     <color name="common_inverse">@color/lotion</color>

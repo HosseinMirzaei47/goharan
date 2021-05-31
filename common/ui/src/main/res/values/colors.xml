@@ -3,6 +3,9 @@
     <!-- Not particular to day or night -->
     <color name="white">#FFF</color>
     <color name="black">#000</color>
+    <color name="dark_turquoise">#80b1b7</color>
+    <color name="light_turquoise">#adcdd0</color>
+    <color name="gs_white">#fff4ef</color>
     <color name="lotion">#FAFAFA</color>
     <color name="charcoal">#364554</color>
     <color name="ocean_green">#40C785</color>
@@ -38,15 +41,15 @@
     <color name="gs_on_secondary">@color/white</color>
     <color name="gs_text_color_primary_inverse">@color/white</color>
     <color name="gs_status_bar">@color/gs_primary</color>
-    <color name="gs_primary">@color/cultured</color>
+    <color name="gs_primary">@color/gs_white</color>
     <color name="gs_on_primary">@color/ocean_green</color>
     <color name="gs_date_picker_header_background">@color/ocean_green</color>
     <color name="gs_color_control_active">@color/matisse</color>
     <color name="gs_color_control_deactive">@color/pastel_blue</color>
     <color name="gs_alert">@color/brick_red</color>
     <color name="global_text_color">@color/charcoal</color>
-    <color name="gs_color_surface">@color/lotion</color>
-    <color name="gs_color_on_surface">@color/ocean_green</color>
+    <color name="gs_color_surface">@color/dark_turquoise</color>
+    <color name="gs_color_on_surface">@color/dark_turquoise</color>
     <color name="title_create_task">@color/charcoal</color>
     <color name="common_inverse">@color/charcoal</color>
     <color name="text_button">@color/lotion</color>

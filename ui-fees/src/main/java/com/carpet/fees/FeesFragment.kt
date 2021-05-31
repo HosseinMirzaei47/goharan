@@ -29,7 +29,7 @@ class FeesFragment : Fragment() {
             repeat(21) {
                 serviceFee {
                     id(Random.nextInt())
-                    icon(R.drawable.circle_profile)
+                    icon(R.drawable.ic_wallet)
                     title(getString(R.string.service_carpet_cleaning))
                 }
             }
