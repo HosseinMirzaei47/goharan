@@ -6,4 +6,7 @@
     <string name="more">بیشتر</string>
 
     <string name="service_carpet_cleaning">قالیشویی</string>
+    <string name="phone">تلفن</string>
+    <string name="email">ایمیل</string>
+    <string name="whats_app">واتس اپ</string>
 </resources>

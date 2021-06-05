@@ -19,6 +19,9 @@ class MoreViewModel @Inject constructor() : ViewModel() {
     private var _onDisclaimerClicked = MutableLiveData<Event<Unit>>()
     val onDisclaimerClicked: LiveData<Event<Unit>> get() = _onDisclaimerClicked
 
+    private var _versionCode = MutableLiveData<String>()
+    val versionCode: LiveData<String> get() = _versionCode
+
     fun onContactUsClicked() {
         _onContactUsClicked.value = Event(Unit)
     }
@@ -31,4 +34,7 @@ class MoreViewModel @Inject constructor() : ViewModel() {
         _onDisclaimerClicked.value = Event(Unit)
     }
 
+    fun onSetVersionCode(code: String) {
+        _versionCode.value = code
+    }
 }

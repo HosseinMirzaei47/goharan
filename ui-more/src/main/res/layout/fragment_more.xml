@@ -21,7 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/more"
-            android:textColor="@color/dark_header" />
+            android:textColor="@color/dark_turquoise" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_contact_us"
@@ -48,13 +48,32 @@
             android:onClick="@{() -> vm.onDisclaimerClicked()}"
             android:text="@string/disclaimer" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_version"
-            style="@style/Goharshad.More.Button"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/more_item_height"
-            android:clickable="false"
-            android:text="@string/version" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_version"
+                style="@style/Goharshad.More.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/more_item_height"
+                android:clickable="false"
+                android:text="@string/version"
+                android:textColor="@color/pink_swan" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Goharshad.More.Button"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/more_item_height"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:gravity="end|center_vertical"
+                android:text="@{vm.versionCode}"
+                android:textColor="@color/pink_swan" />
+
+        </LinearLayout>
 
     </LinearLayout>
 

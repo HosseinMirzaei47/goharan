@@ -6,4 +6,7 @@
     <string name="more">More</string>
 
     <string name="service_carpet_cleaning">Carpet Cleaning</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="whats_app">WhatsApp</string>
 </resources>

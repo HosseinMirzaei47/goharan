@@ -9,4 +9,17 @@
         <item name="android:textSize">@dimen/text_size_micro</item>
     </style>
 
+    <style name="Goharshad.More.Contact.Item.Title" parent="">
+        <item name="android:gravity">bottom</item>
+        <item name="android:textColor">@color/gs_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="Goharshad.More.Contact.Item.Desc" parent="Goharshad.More.Contact.Item.Title">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/text_size_micro</item>
+    </style>
+
 </resources>

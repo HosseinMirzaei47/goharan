@@ -32,6 +32,8 @@ class MoreFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        setVersionCode()
+
         viewModel.onContactUsClicked.observe(viewLifecycleOwner, EventObserver {
             findNavController().navigate(MoreFragmentDirections.actionMoreFragmentToContactUsFragment())
         })
@@ -44,6 +46,14 @@ class MoreFragment : Fragment() {
             findNavController().navigate(MoreFragmentDirections.actionMoreFragmentToDisclaimerFragment())
         })
 
+    }
+
+    private fun setVersionCode() {
+        val pInfo = requireActivity().packageManager.getPackageInfo(
+            requireActivity().packageName, 0
+        )
+        val version = pInfo.versionName
+        viewModel.onSetVersionCode(version)
     }
 
 }
