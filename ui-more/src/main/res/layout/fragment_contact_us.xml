@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/todo"
                 android:padding="@dimen/padding_large"
-                android:src="@drawable/ic_contact_us" />
+                android:src="@drawable/ic_contact_us_header" />
 
         </com.google.android.material.card.MaterialCardView>
 
