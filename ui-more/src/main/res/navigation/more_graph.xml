@@ -13,15 +13,27 @@
 
         <action
             android:id="@+id/action_moreFragment_to_contactUsFragment"
-            app:destination="@id/contactUsFragment" />
+            app:destination="@id/contactUsFragment"
+            app:enterAnim="@anim/gs_fade_in"
+            app:exitAnim="@anim/gs_fade_out"
+            app:popEnterAnim="@anim/gs_fade_in"
+            app:popExitAnim="@anim/gs_fade_out" />
 
         <action
             android:id="@+id/action_moreFragment_to_historyFragment"
-            app:destination="@id/historyFragment" />
+            app:destination="@id/historyFragment"
+            app:enterAnim="@anim/gs_fade_in"
+            app:exitAnim="@anim/gs_fade_out"
+            app:popEnterAnim="@anim/gs_fade_in"
+            app:popExitAnim="@anim/gs_fade_out" />
 
         <action
             android:id="@+id/action_moreFragment_to_disclaimerFragment"
-            app:destination="@id/disclaimerFragment" />
+            app:destination="@id/disclaimerFragment"
+            app:enterAnim="@anim/gs_fade_in"
+            app:exitAnim="@anim/gs_fade_out"
+            app:popEnterAnim="@anim/gs_fade_in"
+            app:popExitAnim="@anim/gs_fade_out" />
 
     </fragment>
 
