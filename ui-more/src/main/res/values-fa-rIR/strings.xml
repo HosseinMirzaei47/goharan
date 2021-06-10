@@ -4,4 +4,6 @@
     <string name="history_goals">تاریخچه و اهداف</string>
     <string name="disclaimer">سلب مسئولیت</string>
     <string name="version">نسخه</string>
+    <string name="feedback_email_subject">اپ گوهران</string>
+    <string name="error_email_not_installed">برنامه ای برای ارسال ایمیل نصب نیست</string>
 </resources>

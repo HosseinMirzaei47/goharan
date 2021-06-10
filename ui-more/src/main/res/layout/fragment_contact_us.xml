@@ -109,6 +109,7 @@
 
         <LinearLayout
             android:id="@+id/card_contact_whats_app"
+            onSafeClick="@{vm::onWhatsAppClicked}"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/margin_normal"
@@ -180,6 +181,7 @@
 
         <LinearLayout
             android:id="@+id/card_contact_email"
+            onSafeClick="@{vm::onEmailClicked}"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/margin_normal"

@@ -26,26 +26,26 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_contact_us"
             style="@style/Goharshad.More.Button"
+            onSafeClick="@{vm::onContactUsClicked}"
             android:layout_width="match_parent"
             android:layout_height="@dimen/more_item_height"
             android:layout_marginTop="@dimen/margin_normal"
-            android:onClick="@{() -> vm.onContactUsClicked()}"
             android:text="@string/contact_us" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_history_goals"
             style="@style/Goharshad.More.Button"
+            onSafeClick="@{vm::onHistoryClicked}"
             android:layout_width="match_parent"
             android:layout_height="@dimen/more_item_height"
-            android:onClick="@{() -> vm.onHistoryClicked()}"
             android:text="@string/history_goals" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_disclaimer"
             style="@style/Goharshad.More.Button"
+            onSafeClick="@{vm::onDisclaimerClicked}"
             android:layout_width="match_parent"
             android:layout_height="@dimen/more_item_height"
-            android:onClick="@{() -> vm.onDisclaimerClicked()}"
             android:text="@string/disclaimer" />
 
         <LinearLayout
