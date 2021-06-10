@@ -10,4 +10,9 @@
     <string name="phone">Phone</string>
     <string name="email">Email</string>
     <string name="whats_app">WhatsApp</string>
+
+    <string name="phone_number_three">Call +98 513 3661 1248</string>
+    <string name="phone_number_one">Call +98 513 3513 1234</string>
+    <string name="phone_number_two">Call +98 915 205 6500</string>
+
 </resources>

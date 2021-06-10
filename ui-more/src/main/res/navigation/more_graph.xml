@@ -41,7 +41,13 @@
         android:id="@+id/contactUsFragment"
         android:name="com.carpet.goharshad.ContactUsFragment"
         android:label="ContactUsFragment"
-        tools:layout="@layout/fragment_contact_us" />
+        tools:layout="@layout/fragment_contact_us">
+
+        <action
+            android:id="@+id/action_contactUsFragment_to_phonesBottomSheetFragment"
+            app:destination="@id/phonesBottomSheetFragment" />
+
+    </fragment>
 
     <fragment
         android:id="@+id/disclaimerFragment"
@@ -54,5 +60,11 @@
         android:name="com.carpet.goharshad.HistoryFragment"
         android:label="HistoryFragment"
         tools:layout="@layout/fragment_history" />
+
+    <dialog
+        android:id="@+id/phonesBottomSheetFragment"
+        android:name="com.carpet.goharshad.PhonesBottomSheetFragment"
+        android:label="PhonesBottomSheetFragment"
+        tools:layout="@layout/fragment_bottom_sheet_phones" />
 
 </navigation>

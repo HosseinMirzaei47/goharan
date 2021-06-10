@@ -10,4 +10,7 @@
     <string name="email">ایمیل</string>
     <string name="whats_app">واتس اپ</string>
     <string name="company_name">گوهران</string>
+    <string name="phone_number_three">تماس با +۹۸ ۵۱۳ ۳۶۶۱ ۱۲۴۸</string>
+    <string name="phone_number_one">تماس با +۹۸ ۵۱۳ ۳۵۱۳ ۱۲۳۴</string>
+    <string name="phone_number_two">تماس با +۹۸ ۹۱۵ ۲۰۵ ۶۵۰۰</string>
 </resources>

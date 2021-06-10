@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="vm"
+            type="com.carpet.goharshad.PhonesViewModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_5sdp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:background="@drawable/gradient_divider"
+            android:rotation="180" />
+
+        <LinearLayout
+            android:id="@+id/ll_phones_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_small"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center_vertical|start"
+                android:contentDescription="@string/todo"
+                android:padding="@dimen/padding_small"
+                android:src="@drawable/ic_small_phone" />
+
+            <View
+                android:layout_width="@dimen/_2sdp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="@dimen/margin_micro"
+                android:background="@drawable/gradient_divider" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tv_phones_first"
+                style="@style/Goharshad.More.Contact.Phones.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:text="@string/phone_number_one" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_phones_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center_vertical|start"
+                android:contentDescription="@string/todo"
+                android:padding="@dimen/padding_small"
+                android:src="@drawable/ic_small_phone" />
+
+            <View
+                android:layout_width="@dimen/_2sdp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="@dimen/margin_micro"
+                android:background="@drawable/gradient_divider" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tv_phones_second"
+                style="@style/Goharshad.More.Contact.Phones.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:text="@string/phone_number_two" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_phones_third"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:paddingBottom="@dimen/padding_normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center_vertical|start"
+                android:contentDescription="@string/todo"
+                android:padding="@dimen/padding_small"
+                android:src="@drawable/ic_small_phone" />
+
+            <View
+                android:layout_width="@dimen/_2sdp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="@dimen/margin_micro"
+                android:background="@drawable/gradient_divider" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tv_phones_third"
+                style="@style/Goharshad.More.Contact.Phones.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:text="@string/phone_number_three" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

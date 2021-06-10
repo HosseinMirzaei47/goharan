@@ -2,6 +2,14 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <data>
+
+        <variable
+            name="vm"
+            type="com.carpet.goharshad.ContactUsViewModel" />
+
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -33,6 +41,7 @@
             android:layout_marginHorizontal="@dimen/margin_normal"
             android:layout_marginTop="@dimen/margin_normal"
             android:background="@drawable/bg_rounded_bottom"
+            android:onClick="@{() -> vm.onPhoneClicked()}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/more_card_header">
